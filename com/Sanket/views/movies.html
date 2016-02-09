@@ -1,0 +1,12 @@
+<table>
+	<tr>
+		<th>Index</th>
+		<th>Title</th>
+		<th>Poster</th>
+	</tr>
+	<tr ng-repeat="movie in data.heros[0].movielist">
+		<td>{{ movie.id }}</td>
+		<td>{{ movie.title }}</td>
+		<td><img src="{{ movie.poster }}" width="50" align="absmiddle"></td>
+	</tr>
+</table>
