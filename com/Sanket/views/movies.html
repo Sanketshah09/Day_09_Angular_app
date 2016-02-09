@@ -1,12 +1,14 @@
-<table>
+<h1>{{ selectedHero }}</h1>
+<table border="0">
 	<tr>
 		<th>Index</th>
 		<th>Title</th>
 		<th>Poster</th>
 	</tr>
-	<tr ng-repeat="movie in data.heros[0].movielist">
-		<td>{{ movie.id }}</td>
+	<tr ng-repeat="movie in movies">
+		<td>{{ movie.sl }}</td>
 		<td>{{ movie.title }}</td>
-		<td><img src="{{ movie.poster }}" width="50" align="absmiddle"></td>
+		<td><img ng-src="{{ movie.poster }}" width="50" align="absmiddle"/></td>
 	</tr>
 </table>
+<a href="#/">Home</a>
